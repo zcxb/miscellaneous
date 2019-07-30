@@ -2,8 +2,8 @@
 # author: chenjunyao
 
 # Before you use:
-# chmod a+x docker-init.sh
-# sudo ln -s docker-init.sh /usr/bin/docker-update
+# chmod a+x docker-update.sh
+# sudo ln -s docker-update.sh /usr/bin/docker-update
 
 echo "This script will guide you to initialize a new docker container,"
 echo "Please use"

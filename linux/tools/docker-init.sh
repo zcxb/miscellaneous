@@ -1,6 +1,10 @@
 #!/bin/bash
 # author: chenjunyao
 
+# Before you use:
+# chmod a+x docker-init.sh
+# sudo ln -s docker-init.sh /usr/bin/docker-update
+
 echo "This script will guide you to initialize a new docker container,"
 echo "Please use"
 echo ""
@@ -10,16 +14,16 @@ echo "to make sure you run this script in the right place."
 
 echo -n "Your app name: "
 read name
-echo -n "Inner port(80):"
+echo -n "Inner port(80): "
 read inner_port
 
 if [ "$inner_port" == "" ]; then
     inner_port=80
 fi
 
-echo -n "Outer port:"
+echo -n "Outer port: "
 read outer_port
-echo -n "Restart with system reboot?(Y/n)"
+echo -n "Restart with system reboot?(Y/n) "
 read b_restart
 
 if [ "$b_restart" == "" ]; then

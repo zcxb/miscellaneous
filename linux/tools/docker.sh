@@ -25,3 +25,6 @@ systemctl enable docker
 
 # see if installed
 docker version
+
+# install lazydocker 
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash

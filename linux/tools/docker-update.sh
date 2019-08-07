@@ -40,9 +40,9 @@ docker ps --format "table {{.ID}}\t{{.Names}}" | grep $name | awk '{print $2}' |
 
 echo "Step.3 run new container"
 if [ "$b_restart"x == "y"x -o "$b_restart"x == "Y"x ]; then
-    docker run --name "$name"_"$cur_date" -p $outer_port:$inner_port -d $name:$cur_date --restart always
+    docker run -d --name "$name"_"$cur_date" --restart "always" -p $outer_port:$inner_port $name:$cur_date 
 else
-    docker run --name "$name"_"$cur_date" -p $outer_port:$inner_port -d $name:$cur_date
+    docker run -d --name "$name"_"$cur_date" -p $outer_port:$inner_port $name:$cur_date
 fi
 echo "Done!"
 exit 0

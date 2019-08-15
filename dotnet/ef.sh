@@ -1,2 +1,2 @@
-Scaffold-dbcontext "Server=192.168.1.159;database=SGD.Invest;Integrated Security=false;user id=****;password=*****" Microsoft.EntityFrameworkCore.SqlServer -outputdir v1/models
-dotnet ef dbcontext scaffold "server=localhost;uid=root;pwd=123456;database=eftests" "Pomelo.EntityFrameworkCore.Mysql" -o Models
+Scaffold-dbcontext "Server=<HOST>;database=<DB_NAME>;Integrated Security=false;user id=<USERNAME>;password=<PASSWORD>" Microsoft.EntityFrameworkCore.SqlServer -outputdir .
+dotnet ef dbcontext scaffold "server=<HOST>;uid=<USERNAME>;pwd=<PASSWORD>;database=<DB_NAME>" "Pomelo.EntityFrameworkCore.MySql" -o .

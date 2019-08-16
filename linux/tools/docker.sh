@@ -32,3 +32,4 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 # add docker0 to firewalld rule
 firewall-cmd --permanent --zone=public --add-rich-rule="rule family=ipv4 source address=172.17.0.1/16 accept"
+systemctl restart firewalld

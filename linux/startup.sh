@@ -18,3 +18,7 @@ service docker restart # restart docker service
 # change ip
 cd /etc/sysconfig/network-scripts
 vim ifcfg-ens160
+
+# disable SELinux
+vim /etc/selinux/config 
+SELINUX=disable # reboot

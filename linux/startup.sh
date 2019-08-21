@@ -21,4 +21,5 @@ vim ifcfg-ens160
 
 # disable SELinux
 vim /etc/selinux/config 
-SELINUX=disable # reboot
+setenforce 0 # temporarily
+SELINUX=disabled # reboot

@@ -12,6 +12,7 @@ visudo
 $user_name ALL=(ALL) NOPASSWD: ALL
 
 # add user to group docker
+sudo groupadd docker
 sudo usermod -aG docker $USER
 service docker restart # restart docker service
 

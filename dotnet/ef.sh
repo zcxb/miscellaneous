@@ -1,2 +1,2 @@
 Scaffold-dbcontext "Server=<HOST>;database=<DB_NAME>;Integrated Security=false;user id=<USERNAME>;password=<PASSWORD>" Microsoft.EntityFrameworkCore.SqlServer -outputdir .
-dotnet ef dbcontext scaffold "server=<HOST>;uid=<USERNAME>;pwd=<PASSWORD>;database=<DB_NAME>" "Pomelo.EntityFrameworkCore.MySql" -o .
+dotnet ef dbcontext scaffold "server=<HOST>;uid=<USERNAME>;pwd=<PASSWORD>;database=<DB_NAME>" "Pomelo.EntityFrameworkCore.MySql" -o . -f --use-database-names

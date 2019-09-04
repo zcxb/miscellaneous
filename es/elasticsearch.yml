@@ -1,0 +1,5 @@
+cluster.name: elasticsearch
+node.name: "node-1"
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+network.host: 0.0.0.0

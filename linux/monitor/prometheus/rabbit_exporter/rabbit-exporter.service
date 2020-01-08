@@ -1,0 +1,10 @@
+[Unit]
+Description=RabbitMQ Exporter
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/rabbit_exporter PUBLISH_PORT=9990 RABBIT_URL="http://localhost:15672" RABBIT_CAPABILITIES="no_sort,bert"
+User=nobody
+
+[Install]
+WantedBy=multi-user.target

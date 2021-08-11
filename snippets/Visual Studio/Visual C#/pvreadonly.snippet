@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>private readonly field</Title>
+			<Shortcut>pvreadonly</Shortcut>
+			<Description>私有只读字段</Description>
+			<Author>zcxb</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>字段类型</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>field</ID>
+					<ToolTip>字段名</ToolTip>
+					<Default>MyField</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[private readonly $type$ _$field$;$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

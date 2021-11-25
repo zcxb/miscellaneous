@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>EntityTypeConfiguration</Title>
+			<Shortcut>econf</Shortcut>
+			<Description>实体映射配置</Description>
+			<Author>zcxb</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>实体名</ToolTip>
+					<Default>type</Default>
+				</Literal>
+				<Literal>
+					<ID>table</ID>
+					<Default>type</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public class $type$EntityTypeConfiguration :
+        EntityTypeConfigurationBase<$type$>,
+        IEntityTypeConfiguration<$type$>
+    {
+        public new void Configure(EntityTypeBuilder<$type$> builder)
+        {
+            base.Configure(builder);
+
+            builder.ToTable("$table$");$end$
+        }
+    }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
